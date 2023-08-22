@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Accessible Portfolio</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<header role="banner">
+  <h1 role="heading" aria-level="1">Sonali Sonawane's Portfolio</h1>
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main role="main">
+  <section id="about">
+    <h2 role="heading" aria-level="2">About Me</h2>
+    <img src="profile.jpg" alt="Sonali Sonawane" role="img">
+    <p>Hi, I'm Sonali Sonawane, a web developer passionate about creating accessible and user-friendly websites.</p>
+  </section>
+
+  <section id="projects">
+    <h2 role="heading" aria-level="2">Projects</h2>
+    <ul role="list">
+      <li role="listitem">Accessible Website Design</li>
+      <li role="listitem">Responsive Web Development</li>
+      <li role="listitem">Web Accessibility Auditing</li>
+    </ul>
+  </section>
+</main>
+
+<footer role="contentinfo" id="contact">
+  <h2 role="heading" aria-level="2">Contact Me</h2>
+  <p>If you'd like to get in touch, feel free to email me at <a href="mailto:sonali@example.com">sonali@example.com</a>.</p>
+</footer>
 
 </body>
-
 </html>
